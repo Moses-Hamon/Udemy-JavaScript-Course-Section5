@@ -1,4 +1,5 @@
 // Function constructor
+
 /*
 var john = {
     name: 'John',
@@ -30,6 +31,7 @@ console.log(peter.lastName);
 john.calcAge();
 peter.calcAge();
 mark.calcAge();
+
 */
 // Object.create
 
@@ -120,6 +122,32 @@ designerQuestion('Moe');
 interviewQuestion('wee')('JACK');
 
 */
+
+
+
+///////////////////////////////////////
+// IIFE - Immediateky Invoked Function Expressions - Lecture 67
+
+/*
+
+function game() {
+    var score = Math.random() * 10;
+    console.log(score >= 5);
+}
+game();
+
+// IIFE example
+(function () {
+    var score = Math.random() * 10;
+    console.log(score >= 5);
+})();
+
+*/
+
+///////////////////////////////////////
+// Closures - Lecture 68
+
+
 
 
 
