@@ -38,11 +38,20 @@
 var questionList = [], currentQuestion, userAnswer, isPlaying = true, score = 0;
 
 // function constructor (object class).
-var Question = function(question, answers, correctAnswer){
-    this.question = question;
-    this.answers = answers;
-    this.correctAnswer = correctAnswer;
-}
+class Question {
+    constructor(question, answers, correctAnswer) {
+        this.question = question;
+        this.answers = answers;
+        this.correctAnswer = correctAnswer;
+    }
+    /*
+    checkIfAnswerIsCorrect(answer) {
+        if (answer == this.correctAnswer){
+            console.log("YEAYHG")
+        }
+    }
+    */
+};
 
 // questions using the Question object (function constructor).
 questionList.push(new Question('Name of Moe\'s dog?', ['jack', 'bob', 'hunter', 'dog'], 3));
@@ -72,11 +81,6 @@ while (isPlaying) {
         console.log('That is Incorrect!!!');
     }
 }
-
-
-
-
-
 
 // FUNCTIONS
 // Prompt User
